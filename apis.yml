@@ -1,8 +1,18 @@
 aid: diviofficial
-name: Diviofficial
-description: 'Diviofficial is a company surfaced as a portfolio company of norwest-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead
-  awaiting the enrichment pipeline.'
+name: Divi Official
+description: >-
+  Divi Official Inc. (Divi Growth Care) is a direct-to-consumer haircare and
+  scalp-care brand formulated "for women by women," selling vegan,
+  science-backed serums, shampoos, conditioners and supplements aimed at the
+  hair-growth journey. The company operates an e-commerce storefront hosted on
+  Shopify at diviofficial.com, with a subscription "Club Divi" program, a
+  content blog, and a customer-account experience. Divi is a portfolio company
+  of Norwest Venture Partners. It is a consumer packaged goods / beauty
+  commerce business and does not publish a first-party developer API, SDK, or
+  developer portal; the only machine-readable surfaces on its domain are the
+  Shopify Customer Accounts OAuth/OIDC discovery documents that the storefront
+  platform exposes. This profile captures the company's public identity, web
+  properties, and domain-security posture for the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/diviofficial/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +20,31 @@ x-backed-by:
 - norwest-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-sector: consumer-packaged-goods
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://www.diviofficial.com/cdn/shop/files/Divi_Logo_Growth-Care-Green-NEW_188207bd-4c5b-42f1-8edd-a8fb5e83b5de.png
 tags:
 - Company
-- Unknown
+- Consumer Packaged Goods
+- Beauty
+- Haircare
+- E-Commerce
+- Direct to Consumer
+- Shopify
+- Subscription
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +53,25 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://diviofficial.com
+  url: https://www.diviofficial.com
+- type: About
+  url: https://www.diviofficial.com/pages/about-us
+- type: Blog
+  url: https://www.diviofficial.com/pages/blog
+- type: Support
+  url: https://www.diviofficial.com/pages/contact
+- type: Login
+  url: https://www.diviofficial.com/account/login
+- type: TermsOfService
+  url: https://www.diviofficial.com/pages/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.diviofficial.com/pages/privacy-policy
+- type: WellKnown
+  url: well-known/diviofficial-well-known.yml
+- type: DomainSecurity
+  url: security/diviofficial-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

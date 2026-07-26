@@ -1,0 +1,23 @@
+generated: '2026-07-18'
+method: searched
+source: live probe of https://www.diviofficial.com/.well-known/*
+host: https://www.diviofficial.com
+note: >-
+  Divi Official is a Shopify-hosted DTC haircare storefront with no first-party
+  developer API. The OAuth/OIDC discovery documents below are Shopify's hosted
+  Customer Accounts platform surfaced on the shop domain (issuer
+  shopify.com/authentication/59138605225), not a Divi-owned API. Captured
+  verbatim because they return 200 on the diviofficial.com host.
+documents:
+- path: /.well-known/openid-configuration
+  status: 200
+  file: diviofficial-openid-configuration.json
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  file: diviofficial-oauth-authorization-server.json
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
